@@ -31,7 +31,7 @@ nothing is sent when you are not signed in or no team is remembered.
 ## Requirements
 
 The [obl CLI](https://openbaseline.io/download) on your PATH, signed in
-(`obl auth login`) with a remembered team (any `obl packages install --team
+(`obl auth login`) with a remembered team (any `obl tools install --team
 org/team` sets it).
 
 ## Install
