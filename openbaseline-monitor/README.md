@@ -1,6 +1,6 @@
 # openbaseline-monitor
 
-A Claude Code plugin that reports session **activity** to your OpenBaseline
+A Claude Code plugin that reports session **activity** to your openbaseline
 team, so the team's Sessions page and the optimizations checks have real
 evidence to work from.
 
@@ -37,7 +37,7 @@ org/team` sets it).
 ## Install
 
 ```
-/plugin marketplace add OpenBaseline/claude-plugins
+/plugin marketplace add openbaseline/claude-plugins
 /plugin install openbaseline-monitor@openbaseline
 ```
 
