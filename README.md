@@ -7,6 +7,14 @@ The plugin marketplace for [openbaseline](https://openbaseline.io).
 /plugin install openbaseline-monitor@openbaseline
 ```
 
+Updating takes two commands, and the first alone is the trap: refreshing the
+marketplace updates the catalogue, not your installation. Then restart.
+
+```
+/plugin marketplace update openbaseline
+/plugin update openbaseline-monitor@openbaseline
+```
+
 ## openbaseline-monitor
 
 Two jobs, and the second one is not a report: it reports Claude Code **session

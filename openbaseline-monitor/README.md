@@ -40,6 +40,21 @@ plugin does. See **Turning pieces off** below for the finer switches.
 /plugin install openbaseline-monitor@openbaseline
 ```
 
+## Update
+
+Two commands, and the first one on its own is the trap: refreshing the
+marketplace updates the catalogue, not your installation, so `plugin list`
+keeps reporting the old version and nothing about your machine changes.
+
+```
+/plugin marketplace update openbaseline
+/plugin update openbaseline-monitor@openbaseline
+```
+
+Then restart Claude Code, which is when the new hooks take effect. This
+marketplace does not auto-update, because Claude Code leaves that off for
+third-party marketplaces, so an update only ever reaches you when you ask.
+
 ## What happens when you install it
 
 Installing the plugin is the whole installation. Nobody opens a terminal:
