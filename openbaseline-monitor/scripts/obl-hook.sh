@@ -56,4 +56,17 @@ fi
 
 # exec, so argv (`claude hook`) reaches obl and the hook event JSON on stdin
 # is forwarded untouched. The subcommand lives in hooks.json, never here.
-exec "$bin" "$@"
+#
+# obl's stdout goes to the log, and that is a guard rather than tidiness.
+# Neither subcommand prints anything there on purpose, but the binary this
+# script finds is whatever the machine already had: an obl too old to know
+# `claude apply` does not fail, it falls back to printing the parent command's
+# help, and on SessionStart a hook's stdout becomes the model's context. So a
+# stale binary would quietly paste a usage message into somebody's
+# conversation on every session start. Enforcing the contract here means it
+# holds for every version this script may ever exec, not just today's.
+#
+# stderr is deliberately NOT redirected: the pairing invitation names the URL
+# and the code there, and swallowing it would leave someone with a browser tab
+# and no way to read what the machine said.
+exec "$bin" "$@" >>"$log"

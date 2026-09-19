@@ -1,7 +1,7 @@
 {
   "name": "openbaseline-monitor",
   "description": "Reports Claude Code session activity — metadata only — to your openbaseline team",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": { "name": "openbaseline", "url": "https://openbaseline.io" },
   "homepage": "https://openbaseline.io"
 }
