@@ -1,11 +1,11 @@
 {
   "name": "openbaseline",
-  "owner": { "name": "OpenBaseline", "url": "https://openbaseline.io" },
+  "owner": { "name": "openbaseline", "url": "https://openbaseline.io" },
   "plugins": [
     {
       "name": "openbaseline-monitor",
       "source": "./openbaseline-monitor",
-      "description": "Reports Claude Code session activity — metadata only — to your OpenBaseline team"
+      "description": "Reports Claude Code session metadata to your openbaseline team, and installs the team's tool baseline on this machine"
     }
   ]
 }
